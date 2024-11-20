@@ -91,6 +91,36 @@ export default function WeaponsSection() {
             image: "/gun10.png",
             thumbnail: "/icon-gun10.png",
             name: "SAWTOOTH"
+        },
+        {
+            image: "/gun11.png",
+            thumbnail: "/icon-gun11.png",
+            name: "POLARIS"
+        },
+        {
+            image: "/gun12.png",
+            thumbnail: "/icon-gun12.png",
+            name: "CHAMPION"
+        },
+        {
+            image: "/gun13.png",
+            thumbnail: "/icon-gun13.png",
+            name: "FREEDOM"
+        },
+        {
+            image: "/gun14.png",
+            thumbnail: "/icon-gun14.png",
+            name: "CHROMA"
+        },
+        {
+            image: "/gun15.png",
+            thumbnail: "/icon-gun15.png",
+            name: "INSPECTOR"
+        },
+        {
+            image: "/gun16.png",
+            thumbnail: "/icon-gun16.png",
+            name: "JUDGE"
         }
     ];
 

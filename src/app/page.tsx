@@ -5,6 +5,7 @@ import StringificationSection from '@/components/StringificationSection';
 import FutureSaviorSection from '@/components/FutureSaviorSection';
 import SuperstringsSection from '@/components/SuperstringsSection';
 import WeaponsSection from '@/components/WeaponsSection';
+import MapsSection from '@/components/MapsSection';
 import Image from 'next/image';
 
 export default function Home() {
@@ -118,6 +119,9 @@ export default function Home() {
 
       {/* Weapons Section */}
       <WeaponsSection />
+
+      {/* Maps Section */}
+      <MapsSection />
     </main>
   );
 }

@@ -23,7 +23,7 @@ const Navigation = () => {
         >
             {/* Logo */}
             <div
-                onClick={() => window.open('https://www.strinova.com/', '_blank')}
+                onClick={() => router.push('/')}
                 className="md:absolute md:left-[25px] md:top-1/2 md:-translate-y-1/2 cursor-pointer"
             >
                 <div className="relative h-[28px] w-[130px]">
