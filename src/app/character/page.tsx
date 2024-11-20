@@ -1,7 +1,7 @@
-"use client";
-
+'use client'
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const characters = [
     {
@@ -157,8 +157,13 @@ function CharacterCard({ character }: {
         iconColor: string
     }
 }) {
+    const router = useRouter();
+
     return (
-        <div className="group mb-[32px] cursor-pointer overflow-hidden rounded-[3px] w-[290px]">
+        <div
+            className="group mb-[32px] cursor-pointer overflow-hidden rounded-[3px] w-[290px]"
+            onClick={() => router.push(`/character/${character.name.toLowerCase()}`)}
+        >
             <div
                 className="h-[360px] w-[290px] bg-[length:100%_100%] bg-center bg-no-repeat transition-all group-hover:bg-[length:102%_102%]"
                 style={{ backgroundImage: `url(${character.image})` }}
