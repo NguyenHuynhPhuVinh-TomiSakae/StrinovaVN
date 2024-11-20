@@ -26,11 +26,14 @@ export default function StringificationSection() {
                 <div className="mt-[20px] text-[14px] font-medium text-[#FFFFFF] whitespace-break-spaces leading-relaxed">
                     Strinova là game bắn súng chiến thuật anime với cơ chế độc đáo cho phép chuyển đổi giữa 2D và 3D, mang đến trải nghiệm PvP gay cấn chưa từng có.
                 </div>
-                <button className="mt-[32px] w-max min-w-[120px] px-[20px] py-[10px] text-[14px] cursor-pointer 
-                    text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex 
-                    justify-center rounded text-center font-bold leading-none transition-all duration-300">
+                <a href="https://www.strinova.com/worldview"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-[32px] w-max min-w-[120px] px-[20px] py-[10px] text-[14px] cursor-pointer 
+                       text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex 
+                       justify-center rounded text-center font-bold leading-none transition-all duration-300">
                     KHÁM PHÁ NGAY
-                </button>
+                </a>
             </div>
             <div className="relative w-full h-full">
                 <div className="absolute inset-0 bg-gradient-to-b from-[#101B51] via-transparent to-transparent opacity-90 z-10" />
@@ -67,11 +70,14 @@ export default function StringificationSection() {
                     chuyển đổi linh hoạt giữa hình dạng 2D và 3D, mang đến lối chơi bắn súng
                     chưa từng có.
                 </div>
-                <button className="mt-[24px] w-max min-w-[140px] px-[36px] py-[14px] text-[16px] cursor-pointer 
-                    text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex 
-                    justify-center rounded text-center font-bold leading-none transition-all duration-300">
+                <a href="https://www.strinova.com/worldview"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-[24px] w-max min-w-[140px] px-[36px] py-[14px] text-[16px] cursor-pointer 
+                       text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex 
+                       justify-center rounded text-center font-bold leading-none transition-all duration-300">
                     KHÁM PHÁ NGAY
-                </button>
+                </a>
             </div>
         </div>
     );

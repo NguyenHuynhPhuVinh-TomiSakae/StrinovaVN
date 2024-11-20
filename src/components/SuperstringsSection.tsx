@@ -3,8 +3,11 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { useRouter } from 'next/navigation';
 
 export default function SuperstringsSection() {
+    const router = useRouter();
+
     const characters = [
         {
             image: "/agent1.png",
@@ -76,9 +79,11 @@ export default function SuperstringsSection() {
                     {characters[activeChar].description}
                 </div>
 
-                <button className="mt-[32px] w-max min-w-[120px] px-[20px] py-[10px] text-[12px] cursor-pointer 
-                    text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex 
-                    justify-center rounded text-center font-bold leading-none transition-all duration-300">
+                <button
+                    onClick={() => router.push('/character')}
+                    className="mt-[32px] w-max min-w-[120px] px-[20px] py-[10px] text-[12px] cursor-pointer 
+                        text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex 
+                        justify-center rounded text-center font-bold leading-none transition-all duration-300">
                     XEM TẤT CẢ
                 </button>
             </div>
@@ -143,7 +148,13 @@ export default function SuperstringsSection() {
                     </div>
                 </div>
 
-                <button className="mt-2 sm:mt-4 md:mt-8 w-max min-w-[60px] sm:min-w-[100px] md:min-w-[140px] px-[12px] sm:px-[20px] md:px-[36px] py-[6px] sm:py-[10px] md:py-[14px] text-[10px] sm:text-[14px] md:text-[16px] cursor-pointer text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex justify-center rounded text-center font-bold leading-none transition-all duration-300">
+                <button
+                    onClick={() => router.push('/character')}
+                    className="mt-2 sm:mt-4 md:mt-8 w-max min-w-[60px] sm:min-w-[100px] md:min-w-[140px] 
+                        px-[12px] sm:px-[20px] md:px-[36px] py-[6px] sm:py-[10px] md:py-[14px] 
+                        text-[10px] sm:text-[14px] md:text-[16px] cursor-pointer text-white hover:text-primary 
+                        border-primary bg-primary hover:bg-white relative flex justify-center rounded 
+                        text-center font-bold leading-none transition-all duration-300">
                     XEM TẤT CẢ
                 </button>
             </div>

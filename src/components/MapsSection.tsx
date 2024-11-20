@@ -103,9 +103,14 @@ export default function MapsSection() {
 
                 {/* View All Button */}
                 <div className="mt-4 flex md:justify-start justify-center">
-                    <button className="w-max min-w-[100px] md:min-w-[140px] px-[20px] md:px-[40px] py-[10px] md:py-[14px] text-[12px] md:text-[16px] cursor-pointer text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex justify-center rounded text-center font-bold leading-none transition-all duration-300">
+                    <a
+                        href="https://www.strinova.com/maps"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-max min-w-[100px] md:min-w-[140px] px-[20px] md:px-[40px] py-[10px] md:py-[14px] text-[12px] md:text-[16px] cursor-pointer text-white hover:text-primary border-primary bg-primary hover:bg-white relative flex justify-center rounded text-center font-bold leading-none transition-all duration-300"
+                    >
                         XEM TẤT CẢ
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -204,11 +204,16 @@ export default function WeaponsSection() {
                             {weapons[activeWeapon].name}
                         </div>
                     </div>
-                    <button className="inline-flex h-[32px] md:h-[40px] min-w-[100px] md:min-w-[120px] items-center justify-center 
-                        rounded bg-primary px-[16px] md:px-[24px] text-[12px] md:text-[14px] font-bold text-white 
-                        transition-all duration-300 hover:bg-white hover:text-primary">
+                    <a
+                        href="https://www.strinova.com/weapon"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex h-[32px] md:h-[40px] min-w-[100px] md:min-w-[120px] items-center justify-center 
+                            rounded bg-primary px-[16px] md:px-[24px] text-[12px] md:text-[14px] font-bold text-white 
+                            transition-all duration-300 hover:bg-white hover:text-primary"
+                    >
                         XEM TẤT CẢ
-                    </button>
+                    </a>
                 </div>
 
                 {/* Weapon Display */}
