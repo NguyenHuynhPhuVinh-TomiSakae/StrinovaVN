@@ -19,8 +19,8 @@ export default function RegisterPage() {
 
     return (
         <div className="h-screen w-full">
-            <main className="relative h-full w-full">
-                {/* Ảnh nền - full màn hình và chỉ lấy phần trên */}
+            <main className="relative flex h-full w-full items-center justify-center md:block">
+                {/* Ảnh nền - giữ nguyên full màn hình */}
                 <div className="absolute inset-0">
                     <Image
                         src="/background-login.jpg"
@@ -31,9 +31,9 @@ export default function RegisterPage() {
                     />
                 </div>
 
-                {/* Form đăng ký - đặt bên phải và căn giữa theo chiều dọc */}
-                <div className="absolute right-[128px] top-1/2 -translate-y-1/2 w-[400px] rounded-[5px] bg-white px-[30px]">
-                    <span className="mb-[30px] mt-[30px] block truncate text-center text-[32px] font-bold">
+                {/* Form đăng ký - căn giữa cho mobile */}
+                <div className="relative w-full md:absolute md:right-[128px] md:top-1/2 md:-translate-y-1/2 md:w-[400px] rounded-[5px] bg-white px-[15px] md:px-[30px] mx-[15px] md:mx-0 max-w-[400px] my-4 md:my-0">
+                    <span className="mb-[20px] md:mb-[30px] mt-[20px] md:mt-[30px] block truncate text-center text-[24px] md:text-[32px] font-bold">
                         ĐĂNG KÝ
                     </span>
 

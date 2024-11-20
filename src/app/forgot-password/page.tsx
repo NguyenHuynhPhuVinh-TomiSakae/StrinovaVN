@@ -13,7 +13,7 @@ export default function ForgotPasswordPage() {
 
     return (
         <div className="h-screen w-full">
-            <main className="relative h-full w-full">
+            <main className="relative flex h-full w-full items-center justify-center md:block">
                 {/* Ảnh nền */}
                 <div className="absolute inset-0">
                     <Image
@@ -26,8 +26,8 @@ export default function ForgotPasswordPage() {
                 </div>
 
                 {/* Form quên mật khẩu */}
-                <div className="absolute right-[128px] top-1/2 -translate-y-1/2 w-[400px] rounded-[5px] bg-white px-[30px]">
-                    <span className="mb-[30px] mt-[30px] block truncate text-center text-[32px] font-bold">
+                <div className="relative w-full md:absolute md:right-[128px] md:top-1/2 md:-translate-y-1/2 md:w-[400px] rounded-[5px] bg-white px-[15px] md:px-[30px] mx-[15px] md:mx-0 max-w-[400px] my-4 md:my-0">
+                    <span className="mb-[20px] md:mb-[30px] mt-[20px] md:mt-[30px] block truncate text-center text-[24px] md:text-[32px] font-bold">
                         KHÔI PHỤC MẬT KHẨU
                     </span>
 

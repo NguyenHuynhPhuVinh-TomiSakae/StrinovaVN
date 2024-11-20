@@ -17,8 +17,8 @@ export default function LoginPage() {
 
     return (
         <div className="h-screen w-full">
-            <main className="relative h-full w-full">
-                {/* Ảnh nền - full màn hình và chỉ lấy phần trên */}
+            <main className="relative flex h-full w-full items-center justify-center md:block">
+                {/* Ảnh nền - giữ nguyên full màn hình */}
                 <div className="absolute inset-0">
                     <Image
                         src="/background-login.jpg"
@@ -29,9 +29,9 @@ export default function LoginPage() {
                     />
                 </div>
 
-                {/* Form đăng nhập - đặt bên phải */}
-                <div className="absolute right-[128px] top-[128px] w-[400px] rounded-[5px] bg-white px-[30px]">
-                    <span className="mb-[30px] mt-[30px] block truncate text-center text-[32px] font-bold">
+                {/* Form đăng nhập - căn giữa cho mobile */}
+                <div className="relative w-full md:absolute md:right-[128px] md:top-[128px] md:w-[400px] rounded-[5px] bg-white px-[15px] md:px-[30px] mx-[15px] md:mx-0 max-w-[400px] my-4 md:my-0">
+                    <span className="mb-[20px] md:mb-[30px] mt-[20px] md:mt-[30px] block truncate text-center text-[24px] md:text-[32px] font-bold">
                         ĐĂNG NHẬP
                     </span>
 
@@ -79,7 +79,7 @@ export default function LoginPage() {
                         </button>
                     </form>
 
-                    <div className="mb-8 flex items-center justify-between text-[14px]">
+                    <div className="mb-6 md:mb-8 flex flex-col md:flex-row items-center justify-between text-[14px] space-y-4 md:space-y-0">
                         <Link href="/forgot-password" className="cursor-pointer text-primary underline">
                             Quên mật khẩu?
                         </Link>
