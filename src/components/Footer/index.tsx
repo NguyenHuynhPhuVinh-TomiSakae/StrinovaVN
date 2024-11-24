@@ -42,7 +42,7 @@ const Footer = () => {
             {/* Footer Content */}
             <div className="flex flex-col items-center justify-center py-8 text-white">
                 <div className="text-center text-sm text-gray-400">
-                    <p>© {new Date().getFullYear()} TomiSakae - Wiki Anime Games.</p>
+                    <p>© {new Date().getFullYear()} TomiSakae - Anime Card Games.</p>
                 </div>
             </div>
         </footer>

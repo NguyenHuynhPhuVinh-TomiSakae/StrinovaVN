@@ -9,11 +9,11 @@ const Navigation = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const menuItems = [
-        { href: 'https://www.strinova.com/news', label: 'TIN TỨC', isExternal: true },
-        { href: 'https://www.strinova.com/worldview', label: 'THẾ GIỚI', isExternal: true },
-        { href: '/character', label: 'NHÂN VẬT', isExternal: false },
-        { href: 'https://www.strinova.com/maps', label: 'BẢN ĐỒ', isExternal: true },
-        { href: 'https://www.strinova.com/weapon', label: 'VŨ KHÍ', isExternal: true },
+        { href: 'https://www.strinova.com/news', label: 'TIN TỨC' },
+        { href: 'https://www.strinova.com/worldview', label: 'THẾ GIỚI' },
+        { href: 'https://www.strinova.com/character', label: 'NHÂN VẬT' },
+        { href: 'https://www.strinova.com/maps', label: 'BẢN ĐỒ' },
+        { href: 'https://www.strinova.com/weapon', label: 'VŨ KHÍ' },
     ];
 
     return (
@@ -55,23 +55,14 @@ const Navigation = () => {
                 {menuItems.map((item) => (
                     <div key={item.href} className="ant-space-item">
                         <div className="relative">
-                            {item.isExternal ? (
-                                <a
-                                    href={item.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="block h-[30px] cursor-pointer rounded-md px-[15px] text-[14px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-medium leading-[30px] text-[#d3d3d3] hover:text-white active:text-white active:opacity-100"
-                                >
-                                    {item.label}
-                                </a>
-                            ) : (
-                                <div
-                                    onClick={() => router.push(item.href)}
-                                    className="block h-[30px] cursor-pointer rounded-md px-[15px] text-[14px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-medium leading-[30px] text-[#d3d3d3] hover:text-white active:text-white active:opacity-100"
-                                >
-                                    {item.label}
-                                </div>
-                            )}
+                            <a
+                                href={item.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block h-[30px] cursor-pointer rounded-md px-[15px] text-[14px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-medium leading-[30px] text-[#d3d3d3] hover:text-white active:text-white active:opacity-100"
+                            >
+                                {item.label}
+                            </a>
                         </div>
                     </div>
                 ))}
@@ -89,11 +80,7 @@ const Navigation = () => {
                                 <div
                                     key={item.href}
                                     onClick={() => {
-                                        if (item.isExternal) {
-                                            window.open(item.href, '_blank', 'noopener,noreferrer');
-                                        } else {
-                                            router.push(item.href);
-                                        }
+                                        window.open(item.href, '_blank', 'noopener,noreferrer');
                                         setIsMobileMenuOpen(false);
                                     }}
                                     className="px-6 py-4 border-b border-gray-700 text-[#d3d3d3] hover:text-white"
